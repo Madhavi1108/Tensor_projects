@@ -1,72 +1,51 @@
-### 🧠 Brain Tumor Detection using Deep Learning (WIP)
+# Brain Tumor Detection Using Deep Learning
 
-> 🚧 **This project is currently under development.**
-> Core model architecture, training pipeline, and evaluation are **incomplete** as of now.
+This project aims to detect brain tumors in MRI images using a Convolutional Neural Network (CNN) model implemented in Python with TensorFlow/Keras. The model is trained to classify brain MRI images into two categories: **Tumor** and **No Tumor**.
 
----
+## 🧠 Project Overview
 
-## 📁 Project Overview
+Brain tumors are abnormal growths of cells in the brain and can be life-threatening. Early detection through medical imaging, especially MRI, is crucial. This project demonstrates how deep learning can aid radiologists by automatically classifying MRI images.
 
-This project aims to develop a deep learning-based classifier that detects brain tumors from MRI images. The current notebook contains initial steps such as:
+## 📁 Dataset
 
-* Setting up the environment
-* Preparing the dataset
-* Some basic exploration and setup for model building
+The dataset used consists of MRI images, categorized as:
 
-**However, model training, validation, and deployment are yet to be implemented.**
+* **Yes** – Images with brain tumors.
+* **No** – Images without brain tumors.
 
----
+The data is split into training and testing sets and preprocessed before being fed into the CNN model.
 
-## 📌 Goals
+## 🔧 Features
 
-* [x] Dataset import and inspection
-* [ ] Data preprocessing and augmentation
-* [ ] Model architecture design (CNN)
-* [ ] Model training & evaluation
-* [ ] Saving/loading trained model
-* [ ] Final accuracy & performance metrics
-* [ ] UI or deployment (optional)
+* Image preprocessing and resizing
+* Data augmentation
+* Binary classification using CNN
+* Accuracy and loss visualization
+* Model evaluation on test data
 
----
+## 🛠️ Technologies Used
 
-## 🔧 Requirements
+* Python
+* TensorFlow / Keras
+* NumPy
+* Matplotlib
+* Google Colab or Jupyter Notebook
 
-Install required libraries:
+## 🚀 How to Run
 
-```bash
-pip install tensorflow numpy matplotlib
-```
+1. Clone this repository or download the notebook.
+2. Install dependencies:
 
----
+   ```bash
+   pip install tensorflow numpy matplotlib
+   ```
+3. Download and prepare the dataset in appropriate train/test folders.
+4. Run the notebook `Brain_Tumor_detection_using_deep_leraning.ipynb`.
 
-## 🚀 Getting Started
+## 📈 Results
 
-1. Clone/download this repository.
-2. Open the `Brain_Tumor_detection_using_deep_learning.ipynb` notebook.
-3. Follow the code cells for current progress.
-4. Future updates will include the complete model pipeline.
+The model shows good accuracy in classifying MRI scans into tumor and non-tumor categories. Training and validation accuracy/loss plots are provided for performance evaluation.
 
----
+## 📄 License
 
-## 📂 Folder Structure (Planned)
-
-```
-Brain_Tumor_Detection/
-│
-├── Brain_Tumor_detection_using_deep_learning.ipynb
-├── dataset/
-│   ├── yes/
-│   └── no/
-├── model/              # (to be added)
-└── README.md
-```
-
----
-
-## 🗓️ Upcoming Tasks
-
-* Implement CNN using Keras/TensorFlow
-* Train model with train/validation split
-* Evaluate on unseen data
-* Save and test the model
-* Visualize predictions
+This project is for academic and learning purposes.
